@@ -1,0 +1,75 @@
+.joydiv-controller{
+  position:relative;
+  top:0;
+  left:0;
+}
+.joydiv-controller .joydiv-up,
+.joydiv-controller .joydiv-left,
+.joydiv-controller .joydiv-right,
+.joydiv-controller .joydiv-down{
+  position:absolute;
+  width:0;
+  height:0;
+  background: transparent;
+  border:solid transparent;
+}
+
+.joydiv-controller .joydiv-up{
+  top:0;
+  left:50%;
+  margin-left:-15%;
+  border-bottom-color: #CCF;
+  border-top-width: 0;
+  border-left-width: .15em;
+  border-right-width: .15em;
+  border-bottom-width: .2em;
+}
+.joydiv-controller .joydiv-left{
+  left:0;
+  top:50%;
+  border-right-color: #CCF;
+  border-top-width: .15em;
+  border-left-width: 0;
+  border-right-width: .2em;
+  border-bottom-width: .15em;
+  margin-top:-15%;
+}
+.joydiv-controller .joydiv-right{
+  right:0;
+  top:50%;
+  margin-top:-15%;
+  border-left-color: #CCF;
+  border-top-width: .15em;
+  border-left-width: .2em;
+  border-right-width: 0;
+  border-bottom-width: .15em;
+}
+.joydiv-controller .joydiv-down{
+  bottom:0;
+  left:50%;
+  margin-left:-15%;
+  border-top-color: #CCF;
+  border-top-width: .2em;
+  border-left-width: .15em;
+  border-right-width: .15em;
+  border-bottom-width: 0;
+}
+.joydiv-controller .joydiv-trackpad{
+  position:absolute;
+  left:30%;
+  right:30%;
+  top:30%;
+  bottom:30%;
+  background:#EEF;
+}
+.joydiv-controller .joydiv-tracker{
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius:50%;
+  border-style:solid;
+  border-width:.1em;
+  margin-left:-.1em;
+  margin-top:-.1em;
+  border-color:#CCF;
+}

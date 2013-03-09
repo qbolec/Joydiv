@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Example 1 - minimalistic example</title>
+    <link href="../joydiv-skin-default.css" rel="stylesheet"/>
+    <style>
+      #controller{
+        width:150px;
+        height:150px;
+        font-size:150px;//font-size is used to determine the size of arrows
+      }
+    </style>
+  </head>
+  <body>
+    <div id='controller' class="joydiv-controller">
+      <div class="joydiv-up"></div>
+      <div class="joydiv-left"></div>
+      <div class="joydiv-right"></div>
+      <div class="joydiv-down"></div>
+      <div class="joydiv-trackpad">
+        <div class="joydiv-tracker"></div>
+      </div>
+    </div>
+    <input type="text" id="direction">
+  </body>
+  <script charset="UTF-8" src="../joydiv.js"></script>
+  <script type="text/javascript">
+    var element = document.getElementById('controller');
+    var joydiv = new JoydivModule.Joydiv({'element':element});
+    element.addEventListener('joydiv-changed',function(e){
+      document.getElementById('direction').value = joydiv.getOneOf8Directions().name;
+    });
+  </script>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>Example 2 - different modes</title>
+    <link href="index.css" rel="stylesheet"/>
+    <!-- you can style the joydiv yourself, it is easy. Here we use a default skin -->
+    <link href="../joydiv-skin-default.css" rel="stylesheet"/>
+    <!-- you can build an HTML for your controller in any way you like, 
+    here we use a tamplate to make it easier to build 3 copies of controller.
+    You can build any html you like, but use the CSS class names as in this example --> 
+    <script type="text/html" id="joydiv-template">
+      <div class="joydiv-controller">
+        <div class="joydiv-up"></div>
+        <div class="joydiv-left"></div>
+        <div class="joydiv-right"></div>
+        <div class="joydiv-down"></div>
+        <div class="joydiv-trackpad">
+          <div class="joydiv-tracker"></div>
+        </div>
+      </div>
+    </script>
+  </head>
+  <body>
+    <div id=playground>
+    </div>
+    <div id=tests>
+      <div id=test1 class=test>
+        <div class="output"></div>
+      </div>
+      <div id=test2 class=test>
+        <div class="output"></div>
+      </div>
+      <div id=test3 class=test>
+        <div class="output"></div>
+      </div>
+    </div>
+  </body>
+  <script charset="UTF-8" src="../joydiv.js" type="text/javascript"></script>
+  <!-- the mootools is not required by joydiv, it is used by the example -->
+  <script charset="UTF-8" src="//cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-compat-yc.js"></script>
+  <!-- our example, which uses joydiv and mootools to create a simple demo -->
+  <script charset="UTF-8" src="index.js" type="text/javascript"></script>
+</html>
