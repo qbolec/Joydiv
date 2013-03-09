@@ -87,8 +87,7 @@ or wait till we implement our own events system...
 It is a good idea to give the user visual feedback that the Joydiv is responsive.
 Since you are in charge of the DOM, you have to do it yourself.
 It is very easy actually.
-See 
-2 for some ideas.
+See example2 for some ideas.
 Remember that the user may cover the controller with the finger or thumb, so provide the visual clues in visible areas.
 
      ['up','right','down','left'].each(function(name){
