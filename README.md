@@ -9,7 +9,7 @@ Integration
 All you need is the joydiv.js file. 
 The library has no dependencies.
 
-See example1/ for a minimal demonstration.
+See [example1](http://vanisoft.pl/~lopuszanski/public/controller/example1/) for a minimal demonstration.
     
       <script type="text/javascript">
         var element = document.getElementById('controller');
@@ -25,10 +25,11 @@ The JoydivModule defined in joydiv.[tj]s file contains Joydiv (the main course)
 and Direction (a helper class, which represents the current direction pointed by user).
 
 The Joydiv does not create any HTML for you, nor adds styles to the elements.
+(OK, actually it adds left and top styles to the tracker element, but this is likely to change in future, too).
 You own the HTML, while Joydiv just attaches event listeners to it and reinterprets mouse, and touch events, to create more comprehensible information in the form of Direction.
 
 If you are worried about the lack of help with HTML, do not be.
-The example1 and example2 show you the basic HTML you can use as a good start.
+The [example1](http://vanisoft.pl/~lopuszanski/public/controller/example1/) and [example2](http://vanisoft.pl/~lopuszanski/public/controller/example2/) show you the basic HTML you can use as a good start.
 Also the file joydiv-skin-default.css provides some default CSS styles you can use. 
 But you don't have to, and this is the beauty.
 
@@ -86,7 +87,8 @@ or wait till we implement our own events system...
 It is a good idea to give the user visual feedback that the Joydiv is responsive.
 Since you are in charge of the DOM, you have to do it yourself.
 It is very easy actually.
-See example2 for some ideas.
+See 
+2 for some ideas.
 Remember that the user may cover the controller with the finger or thumb, so provide the visual clues in visible areas.
 
      ['up','right','down','left'].each(function(name){
