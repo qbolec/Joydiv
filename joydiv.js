@@ -73,14 +73,14 @@ var JoydivModule;
                 var arrow = querySelector(_this.rootElement, '.joydiv-' + info.name);
                 arrow.addEventListener('mousedown', function (e) {
                     _this.addVote(info.direction, 'arrow-mouse-' + i);
-                });
+                }, false);
                 document.addEventListener('mouseup', function (e) {
                     _this.removeVote('arrow-mouse-' + i);
                 }, true);
                 arrow.addEventListener('touchstart', function (e) {
                     e.preventDefault();
                     _this.addVote(info.direction, 'arrow-touch-' + i);
-                });
+                }, false);
                 arrow.addEventListener('touchend', function (e) {
                     e.preventDefault();
                     _this.removeVote('arrow-touch-' + i);
@@ -105,7 +105,7 @@ var JoydivModule;
                         y: e.screenY
                     };
                     e.preventDefault();
-                });
+                }, false);
                 var unmount = function () {
                     origin = null;
                     _this.tracker.style.left = "50%";
@@ -130,7 +130,7 @@ var JoydivModule;
                         y: touch.screenY
                     };
                     e.preventDefault();
-                });
+                }, false);
                 var unmount = function () {
                     origin = null;
                     touchId = null;
